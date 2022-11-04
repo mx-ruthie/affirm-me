@@ -5,7 +5,7 @@ import Profile from "./components/profile";
 import { useAuth0 } from '@auth0/auth0-react';
 import Loading from "./components/loading";
 import { Route, Routes, Link } from 'react-router-dom';
-
+//now I need to replace student stuff with my affirmations app data and functionality
 function App() {
 
   const { isLoading } = useAuth0();
