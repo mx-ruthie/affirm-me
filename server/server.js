@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
 
 // create the get request
 app.get('/api/students', cors(), async (req, res) => {
+  console.log("this is a log");
   // const STUDENTS = [
 
   //     { id: 1, firstName: 'Lisa', lastName: 'Lee' },
@@ -27,8 +28,10 @@ app.get('/api/students', cors(), async (req, res) => {
   // res.json(STUDENTS);
   try {
     const { rows: students } = await db.query('SELECT * FROM students');
+    console.log(students);
     res.send(students);
   } catch (e) {
+    console.log(e);
     return res.status(400).json({ e });
   }
 });
