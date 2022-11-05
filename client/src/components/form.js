@@ -60,7 +60,8 @@ const Form = (props) => {
     } else{
       postStudent(student);
     }
-    
+    //the following line returns the form to blank onSubmit
+    setStudent(initialStudent);
   };
 
   return (

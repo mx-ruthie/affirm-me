@@ -1,5 +1,7 @@
 import React from 'react';
 
+//need to learn how to implement some sort of back-button so when the profile loads
+//onClick of the name, it's possible to return to the previous view.
 const Profile = (props) => {
   let user = props.user;
   console.log(user);
