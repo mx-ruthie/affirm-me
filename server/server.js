@@ -105,8 +105,11 @@ app.post('/api/me', cors(), async (req, res) => {
   const resultsEmail = await db.query(queryEmail, valuesEmail);
   //console.log(resultsEmail);
   //question marks below are optional chaining
-  if(resultsEmail.rows[0]?.email?.length > 0){
-    console.log(`Thank you ${resultsEmail.length() > 0} for comming back`)
+  if(resultsEmail.rows[0]?.email?.length > 0 ){
+    //accidentally had () after .length and followed server logs to resolve issue.
+    //troubleshot what was in the next line and replaced the name with different results 
+    //this is only correctly loggin if Auth0 login, else the log replaces the name with undefined
+    console.log(`Thank you ${newUser.firstname} for comming back`)
   } else{
   const query = 'INSERT INTO users(lastname, firstname, email, sub) VALUES($1, $2, $3, $4) RETURNING *'
   const values = [newUser.lastname, newUser.firstname, newUser.email, newUser.sub]
