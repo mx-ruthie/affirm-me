@@ -5,6 +5,7 @@ import Profile from "./components/profile";
 import { useAuth0 } from '@auth0/auth0-react';
 import Loading from "./components/loading";
 import { Route, Routes, Link } from 'react-router-dom';
+import AffirmMe from "./components/affirm-me-button";
 //now I need to replace student stuff with my affirmations app data and functionality
 function App() {
 
@@ -20,9 +21,10 @@ function App() {
       <div className="container flex-grow-1">
       {!user ? <span>Hello from Techtonica</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
       <Routes>
-      <Route path="/" element={<Students user={user}/>} />
-      <Route path="api/me" element={<Profile user={user}/>} />
+        <Route path="/" element={<Students user={user}/>} />
+        <Route path="api/me" element={<Profile user={user}/>} />
       </Routes>
+      <AffirmMe />
       </div>
     </div>
   );

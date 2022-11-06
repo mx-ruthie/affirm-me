@@ -17,15 +17,7 @@ app.get('/', (req, res) => {
 // create the get request
 app.get('/api/students', cors(), async (req, res) => {
   console.log("this is a log");
-  // const STUDENTS = [
-
-  //     { id: 1, firstName: 'Lisa', lastName: 'Lee' },
-  //     { id: 2, firstName: 'Eileen', lastName: 'Long' },
-  //     { id: 3, firstName: 'Fariba', lastName: 'Dadko' },
-  //     { id: 4, firstName: 'Cristina', lastName: 'Rodriguez' },
-  //     { id: 5, firstName: 'Andrea', lastName: 'Trejo' },
-  // ];
-  // res.json(STUDENTS);
+  // removing hardcoded template data here
   try {
     const { rows: students } = await db.query('SELECT * FROM students');
     console.log(students);
@@ -83,13 +75,7 @@ app.delete('/api/students/:studentId', cors(), async (req, res) =>{
 });
 
 
-// create the POST request for a new user
-// CREATE TABLE users (
-// 	ID SERIAL PRIMARY KEY,
-// 	lastname varchar(255),
-// 	firstname varchar(255),
-//     email varchar(255), 
-//     sub varchar(255));
+// removing example db query text here
 app.post('/api/me', cors(), async (req, res) => {
   const newUser = {
     lastname: req.body.family_name,
