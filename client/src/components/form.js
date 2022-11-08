@@ -23,7 +23,8 @@ const Form = (props) => {
 
   //A function to handle the post request
   const postStudent = (newStudent) => {
-    return fetch("http://localhost:8080/api/students", {
+    //removed the local host 8080 part of the fetch call because its been added as the proxy in the package.json
+    return fetch("/api/students", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newStudent),
@@ -39,7 +40,7 @@ const Form = (props) => {
 
     //A function to handle the Update request
     const updateStudent = (existingStudent) =>{
-      return fetch(`http://localhost:8080/api/students/${existingStudent.id}`, {
+      return fetch(`/api/students/${existingStudent.id}`, {
           method: 'PUT',
           headers: {'Content-Type': 'application/json'}, 
           body: JSON.stringify(existingStudent)

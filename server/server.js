@@ -1,18 +1,34 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
+//add path 
+const path = require('path');
 const db = require('./db/db-connection.js');
+const affirmationApi = require('./routes/affirmationapi.js');
+
 
 const app = express();
+//after express but before port - connecting the directory name which is found in client, so go back once from here in server
+//up to the project folder, then go to client, then go to build 
+const REACT_BUILD_DIR = path.join(__dirname, '..', 'client', 'build');
+app.use(express.static(REACT_BUILD_DIR));
 
-const PORT = 8080;
+//calling either the process.env.PORT or 8080 if that's not available
+const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
+//needed to install node-fetch@2 in order to do fetch on affirmationsapi.js
+app.use('/random', affirmationApi);
 // creates an endpoint for the route /api
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello from My template ExpressJS' });
+  //res.json({ message: 'Hello from My template ExpressJS' }); Instead of the response being a json it's a 
+  res.sendFile(path.join(REACT_BUILD_DIR, 'index.html'));
 });
+
+//routes
+const random =require( "./routes/affirmationapi.js");
+app.use("/random", random)
 
 // create the get request
 app.get('/api/students', cors(), async (req, res) => {
