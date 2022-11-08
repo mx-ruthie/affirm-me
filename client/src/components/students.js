@@ -71,7 +71,7 @@ function Students(props) {
 
   return (
     <div className="students">
-      <h2> List of Students </h2>
+      <h2> This is where I will put a div that displays the affirmation. </h2>
       <ul>
         {students.map((student) => {
           if(student.id === editStudentId){
@@ -89,7 +89,7 @@ function Students(props) {
           }
         })}
       </ul>
-      {!user ? (<h4>Please sign in in order to add students</h4>) : (<Form saveStudent={addStudent} />)}
+      {!user ? (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>) : (<Form saveStudent={addStudent} />)}
     </div>
   );
 }

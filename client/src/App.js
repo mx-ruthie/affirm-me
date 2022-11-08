@@ -18,10 +18,12 @@ function App() {
     <div id="app" className="d-flex flex-column h-100">
       <NavBar />
       <div className="container flex-grow-1">
-      {!user ? <span>Hello from Techtonica</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
+      {!user ? <span>Welcome to the I Affirm Me App</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
       <Routes>
-      <Route path="/" element={<Students user={user}/>} />
-      <Route path="api/me" element={<Profile user={user}/>} />
+      <Route path="/random" />
+      <Route path="/table"/>
+      {/* <Route path="/" element={<Students user={user}/>} /> */}
+      {/* <Route path="api/me" element={<Profile user={user}/>} /> */}
       </Routes>
       </div>
     </div>
