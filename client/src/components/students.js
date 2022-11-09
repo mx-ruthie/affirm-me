@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Form from "./form";
 
+//need to figure out how to make the list disappear on log out
+
 function Students(props) {
   
   let user = props.user;
@@ -89,7 +91,7 @@ function Students(props) {
           }
         })}
       </ul>
-      {!user ? (<h4>Please sign in in order to add students</h4>) : (<Form saveStudent={addStudent} />)}
+      {!user ? (<h4>Log in for a personalized experience, or affirm yourself right away by clicking the button.</h4>) : (<Form saveStudent={addStudent} />)}
     </div>
   );
 }
