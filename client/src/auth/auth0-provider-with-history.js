@@ -19,6 +19,8 @@ const Auth0ProviderWithHistory = ({ children }) => {
       redirectUri={window.location.origin}
       onRedirectCallback={onRedirectCallback}
     >
+    {/* the "children" here is basically how we're rendering the app inside of the
+    auth0 wrapper */}
       {children}
     </Auth0Provider>
   );

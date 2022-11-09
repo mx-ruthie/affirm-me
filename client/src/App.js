@@ -23,7 +23,7 @@ function App() {
       <Route path="/random" />
       <Route path="/table"/>
       {/* <Route path="/" element={<Students user={user}/>} /> */}
-      {/* <Route path="api/me" element={<Profile user={user}/>} /> */}
+      <Route path="api/me" element={<Profile user={user}/>} />
       </Routes>
       </div>
     </div>

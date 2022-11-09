@@ -100,8 +100,8 @@ app.post('/api/me', cors(), async (req, res) => {
     lastname: req.body.family_name,
     firstname: req.body.given_name,
     email: req.body.email,
-    sub: req.body.sub
-    //add line for photo
+    //sub: req.body.sub
+    picture: req.body.picture
 
   }
   //console.log(newUser);
@@ -115,8 +115,8 @@ app.post('/api/me', cors(), async (req, res) => {
   if(resultsEmail.rows[0]?.email?.length > 0){
     console.log(`Thank you ${resultsEmail.length() > 0} for comming back`)
   } else{
-  const query = 'INSERT INTO users(lastname, firstname, email, sub) VALUES($1, $2, $3, $4) RETURNING *'//add photo refs here too
-  const values = [newUser.lastname, newUser.firstname, newUser.email, newUser.sub] //add photo refs here too
+  const query = 'INSERT INTO users(lastname, firstname, email, picture) VALUES($1, $2, $3, $4) RETURNING *'//add photo refs here too
+  const values = [newUser.lastname, newUser.firstname, newUser.email, newUser.picture] //add photo refs here too
   const result = await db.query(query, values);
   console.log(result);
   res.send('it worked')
