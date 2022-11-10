@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Form from "./form";
+import Categories from "./categories";
 
 function Students(props) {
   
@@ -72,7 +72,7 @@ function Students(props) {
   return (
     <div className="students">
       <h2> This is where I will put a div that displays the affirmation. </h2>
-      <ul>
+      {/* <ul>
         {students.map((student) => {
           if(student.id === editStudentId){
             //something needs to happento allow the user edit that existing student
@@ -88,8 +88,8 @@ function Students(props) {
             )
           }
         })}
-      </ul>
-      {!user ? (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>) : (<Form saveStudent={addStudent} />)}
+      </ul> */}
+      {!user ? (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>) : (<h4>Click "Affirm Me" for a new affirmation.</h4>)}
     </div>
   );
 }

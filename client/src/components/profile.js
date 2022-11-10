@@ -24,7 +24,8 @@ const Profile = (props) => {
           />
       <div className="row">
         <pre className="col-12 text-light bg-dark p-4">
-          {JSON.stringify(user, null, 2)}
+          {/* {JSON.stringify(user, null, 2)} */}
+          <h1>Thank you for showing yourself this moment of compassion.</h1>
         </pre>
       </div>
     </div>
