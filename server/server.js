@@ -113,7 +113,8 @@ app.post('/api/me', cors(), async (req, res) => {
   //question marks below are optional chaining
   //if user does exist, thank you, else add to db
   if(resultsEmail.rows[0]?.email?.length > 0){
-    console.log(`Thank you ${resultsEmail.length() > 0} for comming back`)
+    //console.log(`Thank you ${resultsEmail.length() > 0} for comming back`)
+    console.log("does this fix the crash?")
   } else{
   const query = 'INSERT INTO users(lastname, firstname, email, picture) VALUES($1, $2, $3, $4) RETURNING *'//add photo refs here too
   const values = [newUser.lastname, newUser.firstname, newUser.email, newUser.picture] //add photo refs here too
