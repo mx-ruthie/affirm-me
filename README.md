@@ -1,10 +1,10 @@
 ### Template for a Express and React App Project
 Create full stack apps with React and Express. Run your client, server and do a restart of your dump db to have a full-stack project working in minutes
 
-# Step by Step instructions - To use this project as your start point
+### Step by Step instructions - To use this project as your start point
 You can follow this instructions and code along with the video - [setup instructions working](https://www.dropbox.com/s/tthmdat3n3vp3be/SettingUpTemplate.mov?dl=0)
 
-### Details for the I Affirm Me app
+## Details for the I Affirm Me app
 This project utilizes a template written by Cristina from Techtonica - https://github.com/Yosolita1978
 
 I was required to use a template that provided the foundation for an app that ran CRUD operations both with my own database containing at least 2 tables and that utilized an external API. 
