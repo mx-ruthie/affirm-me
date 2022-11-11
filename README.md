@@ -30,11 +30,11 @@ As of November 11, 2022, these features have been successfully implemented:
      
     -first steps for deployment that sets up proxy functioning correctly
       
-     -Auth0 login and logout works and correctly calls the JSON data for a user on the profile page
+    -Auth0 login and logout works and correctly calls the JSON data for a user on the profile page
      
-     -some extremely basic functionality holding the place of react components that will come in the next phase of building the project
+    -some extremely basic functionality holding the place of react components that will come in the next phase of building the project
       
-     -some detailed comments explaining what different parts of the code are doing and what's been removed from the template
+    -some detailed comments explaining what different parts of the code are doing and what's been removed from the template
       
   Still needed:
       
