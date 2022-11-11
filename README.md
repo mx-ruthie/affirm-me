@@ -17,7 +17,7 @@ The very first database item in the affirmations table of the affirm-me database
 
 Logged in users will be able to add affirmations to their favorites list - this favorites list will populate a category of the drop down list. (A later version of the app may include a separate favorites page where the favorites are editable, but that is not part of the MVP due November 23, 2022).
 
-### As of November 11, 2022, these features have been successfully implemented:
+#### As of November 11, 2022, these features have been successfully implemented:
   
     
     -The full-stack app, client and server sides, are set up at a basic functional level.
