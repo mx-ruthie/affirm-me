@@ -36,11 +36,17 @@ As of November 11, 2022, these features have been successfully implemented:
       
      -some detailed comments explaining what different parts of the code are doing and what's been removed from the template
       
-  -Still needed:
+  Still needed:
+      
       -remove last residual template data that isn't relevant to the project
+      
       -fully explicated pseudo-code notes describing what each piece of the code is doing
+      
       -almost all react components need to get built out, splash page, about page, and onClick handling
+      
       -Users and Affirmations table need to JOIN for a junction table that displays favorites by associating primary keys from User and   
        Affirmations tables if favorited (plus all associated React functionality)
+      
       -CSS design
+      
       -testing
