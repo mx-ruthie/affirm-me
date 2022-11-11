@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/nav-bar";
-import Students from "./components/students";
+import Splash from "./components/splash";
 import Profile from "./components/profile";
 import { useAuth0 } from '@auth0/auth0-react';
 import Loading from "./components/loading";
@@ -17,6 +17,7 @@ function App() {
   return (
     <div id="app" className="d-flex flex-column h-100">
       <NavBar />
+      <Splash />
       <div className="container flex-grow-1">
       {!user ? <span>Welcome to the I Affirm Me App</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
       <Routes>

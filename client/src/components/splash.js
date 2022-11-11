@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import Categories from "./categories";
 
-function Students(props) {
-  
+function Splash(props) {
   let user = props.user;
   // this is my original state with an array of students 
   const [students, setStudents] = useState([]);
@@ -71,27 +70,13 @@ function Students(props) {
 
   return (
     <div className="students">
-      <h2> This is where I will put a div that displays the affirmation. </h2>
-      {/* <ul>
-        {students.map((student) => {
-          if(student.id === editStudentId){
-            //something needs to happento allow the user edit that existing student
-            // At some point I need to pass the update function as props - connect this to the backend
-            return <Form initialStudent={student} saveStudent={updateStudent}/>
-          } else{
-            return (
-              <li key={student.id}>
-           {student.firstname} {student.lastname} 
-           <button type="button" onClick={() =>{onEdit(student)}}>EDIT</button>
-           <button type="button" onClick={() =>{onDelete(student)}}>DELETE</button>
-        </li>
-            )
-          }
-        })}
-      </ul> */}
+      <h2> This is where I will put a div that displays the affirmation.  </h2>
+      <h4>The form containing the categories dropdown should be here somewhere</h4>
+      <button>Affirm me button when not logged in else submit from form</button>
+      {/* deleted students list map from template */}
       {!user ? (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>) : (<h4>Click "Affirm Me" for a new affirmation.</h4>)}
     </div>
   );
 }
 
-export default Students;
+export default Splash;
