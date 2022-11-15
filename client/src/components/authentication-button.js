@@ -1,5 +1,6 @@
 // src/components/authentication-button.js
-
+//this code comes straight from the Auth0 docs and toggles the login/logout button
+//depending on the state of the useAuth0 hook
 import React from 'react';
 
 import LoginButton from './login-button';

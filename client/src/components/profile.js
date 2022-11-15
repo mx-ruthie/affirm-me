@@ -1,5 +1,7 @@
 import React from 'react';
 
+//need to learn how to implement some sort of back-button so when the profile loads
+//onClick of the name, it's possible to return to the previous view.
 const Profile = (props) => {
   let user = props.user;
   console.log(user);
@@ -18,6 +20,8 @@ const Profile = (props) => {
           <h2>{user.email}</h2>
         </div>
       </div>
+      {/* the photo wasn't loading correctly for some reason, but once I tracked down 
+      where I was calling the photo in the first place it started working strangely */}
       <img src={user.picture}
             alt="Profile"
             className="rounded-circle img-fluid profile-picture mb-3 mb-md-0"

@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^7.0.0",
+    "concurrently": "^7.5.0",
     "cors": "^2.8.5",
     "db-migrate": "^0.11.13",
     "db-migrate-pg": "^1.2.2",

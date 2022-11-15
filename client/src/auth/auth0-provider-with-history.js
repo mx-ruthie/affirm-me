@@ -2,7 +2,9 @@ import React from 'react';
 import { useNavigate} from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 
+//the code in this file comes directly from the Auth0 tutorial
 const Auth0ProviderWithHistory = ({ children }) => {
+  //these lines call the secret IDs for my AUTH0 account from the .env file
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 

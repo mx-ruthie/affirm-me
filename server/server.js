@@ -37,6 +37,7 @@ app.get('/table', cors(), async (req, res) => {
     const { rows: affirmations } = await db.query('SELECT * FROM affirmations');
     res.send(affirmations);
   } catch (e) {
+    console.log(e);
     return res.status(400).json({ e });
   }
 });
@@ -88,13 +89,7 @@ app.get('/table', cors(), async (req, res) => {
 // });
 
 
-// create the POST request for a new user
-// CREATE TABLE users (
-// 	ID SERIAL PRIMARY KEY,
-// 	lastname varchar(255),
-// 	firstname varchar(255),
-//     email varchar(255), 
-//     sub varchar(255));
+// removing example db query text here
 app.post('/api/me', cors(), async (req, res) => {
   const newUser = {
     lastname: req.body.family_name,
