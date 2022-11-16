@@ -1,3 +1,8 @@
+.affirmation-display {
+  border: 1pt;
+  border-style: solid;
+}
+
 .App {
   text-align: center;
 }

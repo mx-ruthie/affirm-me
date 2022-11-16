@@ -74,7 +74,7 @@ function Splash(props) {
       <h4>The form containing the categories dropdown should be here somewhere</h4>
       <button>Affirm me button when not logged in else submit from form</button>
       {/* deleted students list map from template */}
-      {!user ? (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>) : (<h4>Click "Affirm Me" for a new affirmation.</h4>)}
+      {user ? (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>) : (<h4>Click "Affirm Me" for a new affirmation.</h4>)}
     </div>
   );
 }
