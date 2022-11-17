@@ -41,6 +41,12 @@ app.get('/table', cors(), async (req, res) => {
     return res.status(400).json({ e });
   }
 });
+//create route for adding favorites to affirmations table
+//query db based on string matching (===) and if it doesn't exist in the DB, add to db
+//if it exists, use that
+  //TODO: in the future remove trailing white spaces from entries before they get entered
+  //TODO: in other circumstances maybe make all lowercase to compare exact strings but this will always hit the exact same strings so its not an issue.
+
 
 // create the POST request
 // app.post('/api/students', cors(), async (req, res) => {

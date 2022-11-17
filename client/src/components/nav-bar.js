@@ -3,7 +3,7 @@
 import React from 'react';
 
 import AuthNav from './auth-nav';
-import Favorites from './favorites';
+//import Favorites from './favorites';
 
 const NavBar = () => {
   return (
@@ -12,9 +12,9 @@ const NavBar = () => {
         <div className="container">
           <div className="navbar-brand logo" />
           <AuthNav />
-          <button>About</button>
+          {/* <button>About</button>
           <button>Affirmations</button>
-          <Favorites />
+          <Favorites /> */}
           {/* <button>Custom</button> */}
         </div>
       </nav>
