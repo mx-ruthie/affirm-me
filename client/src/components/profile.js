@@ -8,7 +8,7 @@ const Profile = (props) => {
  
 
   return (
-    <div>
+    <div className="profile">
       <div className="row align-items-center profile-header">
         <div className="col-md text-center text-md-left">
           <h2>{user.name}, you are a whole human being worthy of love.</h2>

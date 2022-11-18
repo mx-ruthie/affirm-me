@@ -1,8 +1,12 @@
 .affirmation-display {
   border: 1pt;
   border-style: solid;
+  text-align: center;
 }
 
+.profile {
+  text-align: ce;
+}
 .App {
   text-align: center;
 }
@@ -43,7 +47,8 @@
 }
 
 body {
-  background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEXcxEjMu1LqzCbCOBoyPMcDJfEzkEyVHueqCc1vd571Wdqs6OfocZda-a14LG-gjfDDdH-4nw57xWNrZpKA9bdXSoCN5aXJiEqlU9h9WIh5tEg4rN7bh51oBw3POnTo4ElkQtvG7JrBinltSA7rPfoF=w360-h798-no?authuser=0");
+  /* background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEXcxEjMu1LqzCbCOBoyPMcDJfEzkEyVHueqCc1vd571Wdqs6OfocZda-a14LG-gjfDDdH-4nw57xWNrZpKA9bdXSoCN5aXJiEqlU9h9WIh5tEg4rN7bh51oBw3POnTo4ElkQtvG7JrBinltSA7rPfoF=w360-h798-no?authuser=0"); */
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.908),rgba(255, 149, 0, 0.946),rgba(255, 225, 1, 0.876),rgba(46, 162, 46, 0.836), rgba(50, 15, 225, 0.846), rgba(139, 15, 139, 0.855));  
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 100%;
