@@ -13,10 +13,11 @@ const AffirmMe = () => {
         setAffirmation(data.affirmation)
       })
   }
-
-  useEffect(() => {
-    fetchAffirmation()
-  }, [])
+//Commented out this useEffect so that it would stop running the 
+//fetchAffirmation every time the page loaded
+  // useEffect(() => {
+  //   fetchAffirmation()
+  // }, [])
  //I need to add what makes the div return to the very inital state 
   return (
     <div className="affirmation-display">

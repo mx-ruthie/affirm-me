@@ -24,7 +24,7 @@ function App() {
      
       <div className="container flex-grow-1">
       {!user ? <span>Welcome to the I Affirm Me App</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
-      <Splash />
+      <Splash user={user}/>
       <Routes>
       <Route path="/random" />
       <Route path="/table"/>
