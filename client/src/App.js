@@ -23,15 +23,16 @@ function App() {
       <NavBar />
      
       <div className="container flex-grow-1">
-      {!user ? <span>Welcome to the I Affirm Me App</span> : <span>Hello <Link to="api/me">{!user.given_name ? user.nickname : user.given_name}</Link></span> }
+      {!user ? <span><h2>Welcome to the I Affirm Me App</h2></span> : <span><h2>Hello <Link to="api/me">{!user.given_name ? user.nickname : user.given_name}</Link></h2></span> }
+      <AffirmMe user={user}/>
       <Splash user={user}/>
       <Routes>
-      <Route path="/random" />
-      <Route path="/table"/>
-      <Route path="api/me" element={<Profile user={user}/>} />
+        <Route path="/random" />
+        <Route path="/table"/>
+        <Route path="api/me" element={<Profile user={user}/>} />
       </Routes>
     
-      <AffirmMe user={user}/>
+      
       </div>
     </div>
     </div>

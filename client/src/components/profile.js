@@ -11,13 +11,7 @@ const Profile = (props) => {
     <div>
       <div className="row align-items-center profile-header">
         <div className="col-md text-center text-md-left">
-          <h2>{user.name}</h2>
-        </div>
-        <div className="col-md text-center text-md-left">
-          <h2>{user.nickname}</h2>
-        </div>
-        <div className="col-md text-center text-md-left">
-          <h2>{user.email}</h2>
+          <h2>{user.name}, you are a whole human being worthy of love.</h2>
         </div>
       </div>
       {/* the photo wasn't loading correctly for some reason, but once I tracked down 
