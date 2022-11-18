@@ -32,7 +32,7 @@ const AffirmMe = (props) => {
       {/* add onChange to the select tags + state that stores the current option that's been selected */}
       {/* onChange prop will have function that when executed will update state to the value coming in from onChange event */}
       {/* i can change the URL getting called in fetchAffirmation if I use the updated state */}
-        {user ? (<select value={category} onChange={onChange}><option>Random</option> <option>Advice</option></select>) : null}
+        {user ? (<select value={category} onChange={onChange}><option>Random</option> <option>table</option></select>) : null}
         <button onClick={() => setAffirmation(fetchAffirmation)} >Affirm Me!</button>
       </>
     </div>
