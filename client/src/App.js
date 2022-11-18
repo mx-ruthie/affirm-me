@@ -32,7 +32,7 @@ function App() {
       <Route path="api/me" element={<Profile user={user}/>} />
       </Routes>
     
-      <AffirmMe />
+      <AffirmMe user={user}/>
       </div>
     </div>
     </div>
