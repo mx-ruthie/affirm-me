@@ -22,10 +22,10 @@ function App() {
     <div id="app" className="d-flex flex-column h-100">
       <NavBar />
      
-      <div className="container flex-grow-1">
-      {!user ? <span><h2>Welcome to the I Affirm Me App</h2></span> : <span><h2>Hello <Link to="api/me">{!user.given_name ? user.nickname : user.given_name}</Link></h2></span> }
-      <AffirmMe user={user}/>
+      <div className="splash">
+      {!user ? <span className="welcome"><h2>Welcome to the I Affirm Me App</h2></span> : <span><h2>Hello <Link to="api/me">{!user.given_name ? user.nickname : user.given_name}</Link></h2></span> }
       <Splash user={user}/>
+      <AffirmMe user={user}/>
       <Routes>
         <Route path="/random" />
         <Route path="/table"/>
