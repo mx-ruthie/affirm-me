@@ -41,3 +41,12 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEXcxEjMu1LqzCbCOBoyPMcDJfEzkEyVHueqCc1vd571Wdqs6OfocZda-a14LG-gjfDDdH-4nw57xWNrZpKA9bdXSoCN5aXJiEqlU9h9WIh5tEg4rN7bh51oBw3POnTo4ElkQtvG7JrBinltSA7rPfoF=w360-h798-no?authuser=0");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+  /* padding: 30px; */
+  text-shadow: #333;
+}

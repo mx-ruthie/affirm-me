@@ -18,6 +18,7 @@ function App() {
   }
 
   return (
+    <div className="body">
     <div id="app" className="d-flex flex-column h-100">
       <NavBar />
      
@@ -33,6 +34,7 @@ function App() {
     
       <AffirmMe />
       </div>
+    </div>
     </div>
   );
 }

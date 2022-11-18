@@ -71,7 +71,9 @@ function Splash(props) {
   return (
     <div className="students">
       {/* deleted students list map from template */}
-      {user ? (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>) : (<h4>Click "Affirm Me" for a new affirmation.</h4>)}
+      {/* I cannot figure out why the conditional in the following line won't work. It only reads the first one. 
+      If I remove the ! before user then it only reads the second one, but it doesn't switch between */}
+      {!user ? (<h4>Click "Affirm Me" for a new affirmation.</h4>) : (<h4>Log in to save the affirmations you believe, or click "Affirm Me" for a new affirmation.</h4>)}
     </div>
   );
 }

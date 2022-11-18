@@ -5,7 +5,7 @@ const AffirmMe = () => {
 
   const fetchAffirmation = () => {
     // fetch("/random") this almost works, but the proxy isn't working (calling localhost:3000 instead of 8080)
-    fetch("https://www.affirmations.dev")
+    fetch("http://localhost:8080/random")
       .then(response => {
         return response.json()
       })
@@ -17,12 +17,12 @@ const AffirmMe = () => {
   useEffect(() => {
     fetchAffirmation()
   }, [])
- 
+ //I need to add what makes the div return to the very inital state 
   return (
     <div className="affirmation-display">
       {affirmation}
       <>
-        <button onClick={() => setAffirmation("Random string")} >Affirm Me!</button>
+        <button onClick={() => setAffirmation(fetchAffirmation)} >Affirm Me!</button>
       </>
     </div>
   )
