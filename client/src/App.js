@@ -23,7 +23,7 @@ function App() {
       <NavBar />
      
       <div className="container flex-grow-1">
-      {!user ? <span>Welcome to the I Affirm Me App</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
+      {!user ? <span>Welcome to the I Affirm Me App</span> : <span>Hello <Link to="api/me">{!user.given_name ? user.nickname : user.given_name}</Link></span> }
       <Splash user={user}/>
       <Routes>
       <Route path="/random" />
