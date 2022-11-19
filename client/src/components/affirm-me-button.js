@@ -25,16 +25,21 @@ const AffirmMe = (props) => {
   // }, [])
  //I need to add what makes the div return to the very inital state 
   return (
-    <div className="affirmation-display">
-      <h1>{affirmation}</h1>
+    <div className="entire-affirmation-div">
       <>
-      {/* insert conditional here that says if user is signed in display the dropdown*/}
+      <div className="affirmation-display-box">
+        <h1>{affirmation}</h1>
+      </div>
       {/* add onChange to the select tags + state that stores the current option that's been selected */}
       {/* onChange prop will have function that when executed will update state to the value coming in from onChange event */}
       {/* i can change the URL getting called in fetchAffirmation if I use the updated state */}
-        {user ? (<select value={category} onChange={onChange}><option>Random</option> <option>table</option></select>) : null}
-        <button className="button-64" onClick={() => setAffirmation(fetchAffirmation)} >Affirm Me!</button>
+      {user ? (<select value={category} onChange={onChange}><option>Random</option> <option>table</option></select>) : null}
       </>
+      <div className="affirmbutton">
+          <button className="button-64" onClick={() => setAffirmation(fetchAffirmation)} >Affirm Me!</button>
+      
+    </div>
+    
     </div>
   )
 }
