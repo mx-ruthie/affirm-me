@@ -1,6 +1,6 @@
 import React from 'react';
 
-//need to learn how to implement some sort of back-button so when the profile loads
+//TODO: later - need to learn how to implement some sort of back-button so when the profile loads
 //onClick of the name, it's possible to return to the previous view.
 const Profile = (props) => {
   let user = props.user;
@@ -8,16 +8,10 @@ const Profile = (props) => {
  
 
   return (
-    <div>
+    <div className="profile">
       <div className="row align-items-center profile-header">
         <div className="col-md text-center text-md-left">
-          <h2>{user.name}</h2>
-        </div>
-        <div className="col-md text-center text-md-left">
-          <h2>{user.nickname}</h2>
-        </div>
-        <div className="col-md text-center text-md-left">
-          <h2>{user.email}</h2>
+          <h2>{user.name}, you are a whole human being worthy of love.</h2>
         </div>
       </div>
       {/* the photo wasn't loading correctly for some reason, but once I tracked down 
