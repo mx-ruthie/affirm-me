@@ -1,85 +1,19 @@
---
--- PostgreSQL database dump
---
-
--- Dumped from database version 14.5
--- Dumped by pg_dump version 14.5
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
---
--- Name: affirmations; Type: TABLE; Schema: public; Owner: ruthieirvin
---
+/* Replace with your SQL commands */
 
 CREATE TABLE public.affirmations (
-    id integer NOT NULL,
+    id SERIAL PRIMARY KEY,
     text character varying,
     author character varying,
     category character varying
 );
 
-
-ALTER TABLE public.affirmations OWNER TO ruthieirvin;
-
---
--- Name: favorites_id_seq; Type: SEQUENCE; Schema: public; Owner: ruthieirvin
---
-
-ALTER TABLE public.affirmations ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.favorites_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1
-);
-
-
---
--- Name: users; Type: TABLE; Schema: public; Owner: ruthieirvin
---
-
 CREATE TABLE public.users (
-    id integer NOT NULL,
+    id SERIAL PRIMARY KEY,
     firstname character varying,
     lastname character varying,
     email character varying,
     picture character varying
 );
-
-
-ALTER TABLE public.users OWNER TO ruthieirvin;
-
---
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: ruthieirvin
---
-
-ALTER TABLE public.users ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.users_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1
-);
-
-
---
--- Data for Name: affirmations; Type: TABLE DATA; Schema: public; Owner: ruthieirvin
---
 
 INSERT INTO public.affirmations (id, text, author, category) OVERRIDING SYSTEM VALUE VALUES (13, 'Release any false sense of control. Ready yourself to face whatever comes beacuse you can - and you will. ', 'internal', 'advice');
 INSERT INTO public.affirmations (id, text, author, category) OVERRIDING SYSTEM VALUE VALUES (20, 'Self-massage. Stretch more. Dedicate 5 minutes to showing yourself compassion.', 'internal', 'theraputic');
@@ -115,50 +49,5 @@ INSERT INTO public.affirmations (id, text, author, category) OVERRIDING SYSTEM V
 INSERT INTO public.affirmations (id, text, author, category) OVERRIDING SYSTEM VALUE VALUES (32, 'There''s always another wave. You''ll catch the right one.', 'internal', 'theraputic');
 INSERT INTO public.affirmations (id, text, author, category) OVERRIDING SYSTEM VALUE VALUES (33, 'Ride the wheel. Don''t force it to trample you.', 'internal', 'advice');
 
-
---
--- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: ruthieirvin
---
-
-INSERT INTO public.users (id, firstname, lastname, email, picture) OVERRIDING SYSTEM VALUE VALUES (1, NULL, NULL, 'scott@scott.com', 'https://s.gravatar.com/avatar/a6c9f2ddfbc1f1949952ec28f1b77ff7?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fsc.png');
-INSERT INTO public.users (id, firstname, lastname, email, picture) OVERRIDING SYSTEM VALUE VALUES (2, 'Ruth', 'Irvin', 'ruth.diane.irvin@gmail.com', 'https://lh3.googleusercontent.com/a/ALm5wu1ydnPbco9h4qQ8k1LP9CIS5-P6a7U3_z2AS77-zQ=s96-c');
-INSERT INTO public.users (id, firstname, lastname, email, picture) OVERRIDING SYSTEM VALUE VALUES (3, NULL, NULL, 'ruth@gmail.com', 'https://s.gravatar.com/avatar/93c53ce21582507d7cb97a308feab5c3?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fru.png');
-INSERT INTO public.users (id, firstname, lastname, email, picture) OVERRIDING SYSTEM VALUE VALUES (4, NULL, NULL, 'natalia@natalia.com', 'https://s.gravatar.com/avatar/e02341d261cd2c93e5f53f93d43471e4?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fna.png');
-INSERT INTO public.users (id, firstname, lastname, email, picture) OVERRIDING SYSTEM VALUE VALUES (5, NULL, NULL, 'sarah@sarah.com', 'https://s.gravatar.com/avatar/abbacc01341c095113f802ee56f2b1a4?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fsa.png');
-INSERT INTO public.users (id, firstname, lastname, email, picture) OVERRIDING SYSTEM VALUE VALUES (6, NULL, NULL, 'zachy@zachy.com', 'https://s.gravatar.com/avatar/bd27f8ad7dd2d33a30bcb6d0ad0a0e67?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fza.png');
-
-
---
--- Name: favorites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ruthieirvin
---
-
-SELECT pg_catalog.setval('public.favorites_id_seq', 33, true);
-
-
---
--- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ruthieirvin
---
-
 SELECT pg_catalog.setval('public.users_id_seq', 6, true);
-
-
---
--- Name: affirmations favorites_pkey; Type: CONSTRAINT; Schema: public; Owner: ruthieirvin
---
-
-ALTER TABLE ONLY public.affirmations
-    ADD CONSTRAINT favorites_pkey PRIMARY KEY (id);
-
-
---
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: ruthieirvin
---
-
-ALTER TABLE ONLY public.users
-    ADD CONSTRAINT users_pkey PRIMARY KEY (id);
-
-
---
--- PostgreSQL database dump complete
---
 
