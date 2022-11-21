@@ -20,7 +20,7 @@ app.use(express.json());
 
 // create the get request
 app.get('/:category', async (req, res) => {
-  let category = req.params.category;
+  let category = req.params.category.toLowerCase();
   console.log
   if(category.toLowerCase()==="random"){
     let URL = "https://www.affirmations.dev/";
