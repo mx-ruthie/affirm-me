@@ -30,7 +30,7 @@ function App() {
       <Splash user={user}/>
       <Routes>
         <Route path="/random" />
-        <Route path="/table"/>
+        <Route path="/growth"/>
         <Route path="api/me" element={<Profile user={user}/>} />
       </Routes>
     

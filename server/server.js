@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 });
 
 // create the get request
-app.get('/table', cors(), async (req, res) => {
+app.get('/growth', cors(), async (req, res) => {
   
   try {
     const { rows: affirmations } = await db.query('SELECT * FROM affirmations');
