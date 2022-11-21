@@ -23,12 +23,14 @@ function App() {
       <NavBar />
      
       <div className="splash">
+        {/* need to add onClick to link so that the profile data will disappear again if re-clicked. toggle the state. https://bobbyhadz.com/blog/react-onclick-link */}
       {!user ? <span className="welcome"><h2>I Affirm Me</h2></span> : <span><h2>Absolutely one of a kind, <Link to="api/me">{!user.given_name ? user.nickname : user.given_name}</Link>.</h2></span> }
-      <Splash user={user}/>
+      
       <AffirmMe user={user}/>
+      <Splash user={user}/>
       <Routes>
         <Route path="/random" />
-        <Route path="/table"/>
+        <Route path="/growth"/>
         <Route path="api/me" element={<Profile user={user}/>} />
       </Routes>
     
