@@ -28,7 +28,7 @@ const AffirmMe = (props) => {
     <div className="entire-affirmation-div">
       <>
       <div className="affirmation-display-box">
-        <h1>{affirmation}.</h1>
+        <h1>{affirmation}</h1>
       </div>
       {/* add onChange to the select tags + state that stores the current option that's been selected */}
       {/* onChange prop will have function that when executed will update state to the value coming in from onChange event */}
