@@ -2,9 +2,9 @@ const express = require("express");
 const fetch = require("node-fetch");
 const router = express.Router();
 
-// GET REQUEST FOR AFFIRMATIONS API
+// GET REQUEST FOR LOCAL AFFIRMATIONS TABLE
 router.get('/', (req, res) => {
-  let URL = "https://www.affirmations.dev/";
+  let URL = "";
     fetch(URL)
     .then((response) => response.json())
     .then((data) => {
