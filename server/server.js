@@ -26,10 +26,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(REACT_BUILD_DIR, 'index.html'));
 });
 
-//routes
-const random =require( "./routes/affirmationapi.js");
-app.use("/random", random)
-
 // create the get request
 app.get('/table', cors(), async (req, res) => {
   
