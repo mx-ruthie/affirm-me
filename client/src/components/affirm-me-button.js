@@ -5,6 +5,10 @@ const AffirmMe = (props) => {
   const [affirmation, setAffirmation] = useState("Even on your worst day, you are still a whole human being worthy of love.")
   const [category, setCategory] = useState("Random");
   const fetchAffirmation = () => {
+    
+    //TODO: Ask Cristina how to change the fetch below to hit the correct render
+    //database instead of my local server through local host 8080
+
     // fetch("/random") this almost works, but the proxy isn't working (calling localhost:3000 instead of 8080)
     fetch(`http://localhost:8080/${category}`)
       .then(response => {
@@ -36,7 +40,7 @@ const AffirmMe = (props) => {
       {user ? (<select value={category} onChange={onChange}><option>Random</option> <option>Theraputic</option> <option>Advice</option> <option>Self-esteem</option></select>) : null}
       </>
       <div className="affirmbutton">
-          <button className="button-64" onClick={() => setAffirmation(fetchAffirmation)} >Affirm Me!</button>
+          <button className="button-64" onClick={() => fetchAffirmation()} >Affirm Me!</button>
       
     </div>
     
