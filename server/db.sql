@@ -137,7 +137,7 @@ COPY public.users (id, firstname, lastname, email, picture) FROM stdin;
 -- Name: favorites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ruthieirvin
 --
 
-SELECT pg_catalog.setval('public.favorites_id_seq', 33, true);
+SELECT pg_catalog.setval('public.affirmations_id_seq', 33, true);
 
 
 --
@@ -152,7 +152,7 @@ SELECT pg_catalog.setval('public.users_id_seq', 7, true);
 --
 
 ALTER TABLE ONLY public.affirmations
-    ADD CONSTRAINT favorites_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT affirmations_pkey PRIMARY KEY (id);
 
 
 --
