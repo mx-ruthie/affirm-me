@@ -17,7 +17,7 @@ A final project for Techtonica 2022H2 cohort. The required template (written by 
   -Command Line
   -Git and GitHub
   -CSS
-  - Custom URL hosted through GoDaddy and served through an app deployed with render.com: iaffirmme.app
+  -Custom URL hosted through GoDaddy and served through an app deployed with render.com: https://www.iaffirmme.app
 
 ### Trimmed from the MVP for presentations but in the works for the future:
   - Favoriting affirmations to then serve up as an additional category 
