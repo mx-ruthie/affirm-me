@@ -6,6 +6,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import Loading from "./components/loading";
 import { Route, Routes, Link } from 'react-router-dom';
 import AffirmMe from "./components/affirm-me-button";
+
 //import { useState } from "react";
 //now I need to replace student stuff with my affirmations app data and functionality
 function App() {
