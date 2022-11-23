@@ -112,7 +112,7 @@ Additional note: The tests written for this app required finding the latest comp
  - Sarah Cawley, MVP streamlining extraordinaire.
  - Natalia Margolis, my mentor throughout Techtonica and my technical mentor.
  - The Office Hours mentors that devoted time and patient energy helping me, especially in no particular order Julie Watzko, Scott Gilroy, Stephen Furlani, Vlad Jiminez, and Mandy Chen.
- - Also, my cohort-mates with direct influence in the production of this app are: Alma Benitez, Diana Olivas, Kimberly Dang, Presh Worthy, and Supriya Venkatachala. Without these gentle souls I would not have finished this in time. 
+ - Also, my cohort-mates with direct influence in the production of this app are: Alma Benitez, Angel Sanchez, Diana Olivas, Kimberly Dang, Presh Worthy, and Supriya Venkatachala. Without these gentle souls I would not have finished this in time. 
  
  
 Additionally, my spouse Zach has done everything in his power to secure the time and space needed to dive fully into Techtonica, including assuming primary responsibility for our two children while teaching 10th and 11th grade English full time as I worked and co-cared for my mother across town. My sister Erin gave me an iPad and pencil for my birthday which enhanced my work and creativity beyond measure, and my brother Andrew inspired me to be a software engineer in March of this year then gifted me my external monitor for the pursuit. Without these 3 people, I would not have access to this level of success. 
