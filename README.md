@@ -109,7 +109,7 @@ Additional note: The tests written for this app required finding the latest comp
  - Cristina Rodriguez, inspirational teacher and template builder.
  - Sarah Cawley, MVP streamlining extraordinaire.
  - Natalia Margolis, my mentor throughout Techtonica and my technical mentor.
- - The Office Hours mentors that devoted time and patient energy helping me, especially in no particular order Julie Watzko, Scott Gilroy, Stephen Furlani, Vlad Jiminez, and Mandy Chen.
+ - The Office Hours mentors that devoted time and patient energy helping me, especially in no particular order Julie Wotzko, Scott Gilroy, Stephen Furlani, Vlad Jimenez, and Mandy Chen.
  - Also, my cohort-mates with direct influence in the production of this app are: Alma Benitez, Angel Sanchez, Diana Olivas, Kimberly Dang, Presh Worthy, and Supriya Venkatachala. Without these gentle souls I would not have finished this in time. 
  
  
