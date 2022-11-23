@@ -2,7 +2,16 @@
 I Affirm Me simply returns meaningful, true affirmations to the client from an external Affirmations API with the click of a button. Upon login, users gain access to additional original affirmations by category. Ideally it's used as a tool to help people remember to be gentle with themselves.
 
 ## Details for iaffirmme.app
-A final project for Techtonica 2022H2 cohort. The required template (written by Cristina from Techtonica - https://github.com/Yosolita1978) provided the foundation for an app that ran CRUD operations. You can see a copy of the starting point of my app with Auth0 integration included here: https://github.com/mx-ruthie/final-project-template. According to other requirements, I also connected my own database containing at least 2 tables, utilized an external API (https://github.com/annthurium/affirmations), and implented Auth0 for login. I used render.com to deploy the app, and a domain hosted through GoDaddy for the direct link.
+A final project for Techtonica 2022H2 cohort. The required template (written by Cristina from Techtonica - https://github.com/Yosolita1978) provided the foundation for an app that ran CRUD operations. You can see a copy of the starting point of my app with Auth0 integration included here: https://github.com/mx-ruthie/final-project-template. 
+
+According to other requirements, I also connected my own database containing at least 2 tables, utilized an external API (https://github.com/annthurium/affirmations), and implented Auth0 for login. 
+
+I utilized render.com to deploy the app, and a domain hosted through GoDaddy for the direct link.
+
+Procreate on an iPad is the medium used for the background image creation.
+
+Using PostgreSQL + Postico I transferred the affirmations I had previously written in a homemade oracle deck to a database.
+
 #### Stack/Technology info
   -PERN stack
   -JavaScript
@@ -17,9 +26,8 @@ A final project for Techtonica 2022H2 cohort. The required template (written by 
   -Command Line
   -Git and GitHub
   -CSS
-  -Custom URL (GoDaddy + render.com)
-    - https://www.iaffirmme.app	
-  - iPad Pro + Apple Pencil + Procreate
+  -Custom URL (GoDaddy + render.com)- https://www.iaffirmme.app	
+  -iPad Pro + Apple Pencil + Procreate
 
 ### Trimmed from the MVP for presentations but in the works for the future:
   - Favoriting affirmations to then serve up as an additional category 
