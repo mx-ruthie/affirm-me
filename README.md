@@ -1,7 +1,7 @@
-# The MVP of the I Affirm Me app:
-I Affirm Me simply returns meaningful, true affirmations to the client from an external Affirmations API with the click of a button. Upon login, users gain access to additional original affirmations by category. 
+# The MVP of iaffirmme.app
+I Affirm Me simply returns meaningful, true affirmations to the client from an external Affirmations API with the click of a button. Upon login, users gain access to additional original affirmations by category. Ideally it's used as a tool to help people remember to be gentle with themselves.
 
-## Details for the I Affirm Me app
+## Details for Project
 A final project for Techtonica 2022H2 cohort. The required template (written by Cristina from Techtonica - https://github.com/Yosolita1978) provided the foundation for an app that ran CRUD operations. You can see a copy of the starting point of my app with Auth0 integration included here: https://github.com/mx-ruthie/final-project-template. According to other requirements, I also connected my own database containing at least 2 tables, utilized an external API (https://github.com/annthurium/affirmations), and implented Auth0 for login. I used render.com to deploy the app, and a domain hosted through GoDaddy for the direct link.
 #### Stack/Technology info
   -PERN stack
