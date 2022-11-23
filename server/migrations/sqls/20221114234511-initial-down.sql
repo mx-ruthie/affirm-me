@@ -2,4 +2,4 @@
 
 DROP TABLE affirmations;
 DROP TABLE users;
-DROP TABLE favorites;
+

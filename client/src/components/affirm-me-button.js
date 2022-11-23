@@ -10,7 +10,9 @@ const AffirmMe = (props) => {
     //database instead of my local server through local host 8080
 
     // fetch("/random") this almost works, but the proxy isn't working (calling localhost:3000 instead of 8080)
-    fetch(`http://localhost:8080/${category}`)
+    //fetch(`http://localhost:8080/${category}`)
+
+    fetch(`/${category}`)
       .then(response => {
         return response.json()
       })
