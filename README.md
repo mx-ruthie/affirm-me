@@ -1,9 +1,7 @@
 # I Affirm Me MVP
 I Affirm Me simply returns meaningful, true affirmations to the client from an external Affirmations API with the click of a button. Upon login, users gain access to additional original affirmations by category. Ideally it's used as a tool to help people remember to be gentle with themselves.
 
-
-https://user-images.githubusercontent.com/102179075/203637350-7f93ac08-7a84-4add-9d17-ab19e0435d27.mp4
-
+![affirmme](https://user-images.githubusercontent.com/102179075/203648499-4060965f-dd93-49a6-9dce-2089f396317d.jpg)
 
 ## Details for iaffirmme.app
 A final project for Techtonica 2022H2 cohort. The required template (written by Cristina from Techtonica - https://github.com/Yosolita1978) provided the foundation for an app that ran CRUD operations. You can see a copy of the starting point of my app with Auth0 integration included here: https://github.com/mx-ruthie/final-project-template. 
@@ -120,5 +118,8 @@ Additional note: The tests written for this app required finding the latest comp
 Additionally, my spouse Zach has done everything in his power to secure the time and space needed to dive fully into Techtonica, including primary responsibility for our two children while teaching 10th and 11th grade English full time while I worked and co-cared for my mother across town. My sister Erin gave me an iPad and pencil for my birthday which enhanced my work and creativity beyond measure, and my brother Andrew inspired me to be a software engineer in March of this year then gifted me my external monitor for the pursuit. Without these 3 people, I would not have access to this level of success. 
 
 Special thanks to my mother, Sharon, for surviving the stroke August 19th of this year. Working on this program while helping you fight to live and thrive has been the most affirming experience of all. And thanks to my father, Charles, for reminding me to stay grateful and walk in integrity every single step of the way. 
+
+https://user-images.githubusercontent.com/102179075/203637350-7f93ac08-7a84-4add-9d17-ab19e0435d27.mp4
+
 
 
