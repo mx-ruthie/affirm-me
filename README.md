@@ -1,6 +1,10 @@
 # I Affirm Me MVP
 I Affirm Me simply returns meaningful, true affirmations to the client from an external Affirmations API with the click of a button. Upon login, users gain access to additional original affirmations by category. Ideally it's used as a tool to help people remember to be gentle with themselves.
 
+
+https://user-images.githubusercontent.com/102179075/203637350-7f93ac08-7a84-4add-9d17-ab19e0435d27.mp4
+
+
 ## Details for iaffirmme.app
 A final project for Techtonica 2022H2 cohort. The required template (written by Cristina from Techtonica - https://github.com/Yosolita1978) provided the foundation for an app that ran CRUD operations. You can see a copy of the starting point of my app with Auth0 integration included here: https://github.com/mx-ruthie/final-project-template. 
 
