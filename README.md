@@ -91,7 +91,7 @@ npm install
 ```
 
 Create a `.env` file and enter your Auth0 credentials. You can refer `.env.example` file.
-If not using cconcurrently, start the local host client:
+If not using concurrently, start the local host client:
 
 ```bash
 npm start
