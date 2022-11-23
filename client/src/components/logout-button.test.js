@@ -3,6 +3,6 @@ import LogoutButton from './logout-button';
 
 test('renders Log Out', () => {
   render(<LogoutButton />);
-  const affirmingText = screen.getByRole("button");
-  expect(affirmingText).toHaveTextContent("Log Out");
+  const logOut = screen.getByRole("button");
+  expect(logOut).toHaveTextContent("Log Out");
 });

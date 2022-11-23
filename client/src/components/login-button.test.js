@@ -3,6 +3,6 @@ import LoginButton from './login-button'
 
 test('renders Log In', () => {
   render(<LoginButton />);
-  const affirmingText = screen.getByRole("button");
-  expect(affirmingText).toHaveTextContent("Log In");
+  const logIn = screen.getByRole("button");
+  expect(logIn).toHaveTextContent("Log In");
 });
