@@ -5,8 +5,14 @@ const AffirmMe = (props) => {
   const [affirmation, setAffirmation] = useState("Even on your worst day, you are still a whole human being worthy of love.")
   const [category, setCategory] = useState("Random");
   const fetchAffirmation = () => {
+    
+    //TODO: Ask Cristina how to change the fetch below to hit the correct render
+    //database instead of my local server through local host 8080
+
     // fetch("/random") this almost works, but the proxy isn't working (calling localhost:3000 instead of 8080)
-    fetch(`http://localhost:8080/${category}`)
+    //fetch(`http://localhost:8080/${category}`)
+
+    fetch(`/${category}`)
       .then(response => {
         return response.json()
       })
@@ -33,10 +39,10 @@ const AffirmMe = (props) => {
       {/* add onChange to the select tags + state that stores the current option that's been selected */}
       {/* onChange prop will have function that when executed will update state to the value coming in from onChange event */}
       {/* i can change the URL getting called in fetchAffirmation if I use the updated state */}
-      {user ? (<select value={category} onChange={onChange}><option>Random</option> <option>table</option></select>) : null}
+      {user ? (<select value={category} onChange={onChange}><option>Random</option> <option>Theraputic</option> <option>Advice</option> <option>Self-esteem</option></select>) : null}
       </>
       <div className="affirmbutton">
-          <button className="button-64" onClick={() => setAffirmation(fetchAffirmation)} >Affirm Me!</button>
+          <button className="button-64" onClick={() => fetchAffirmation()} >Affirm Me!</button>
       
     </div>
     

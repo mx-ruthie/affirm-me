@@ -4,7 +4,7 @@ require('dotenv').config();
 //add path 
 const path = require('path');
 const db = require('./db/db-connection.js');
-const affirmationApi = require('./routes/affirmationapi.js');
+const fetch = require("node-fetch");
 
 
 const app = express();
@@ -18,46 +18,47 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
-//needed to install node-fetch@2 in order to do fetch on affirmationsapi.js
-app.use('/random', affirmationApi);
+// create the get request
+app.get('/:category', async (req, res) => {
+  let category = req.params.category.toLowerCase();
+  console.log
+  if(category.toLowerCase()==="random"){
+    let URL = "https://www.affirmations.dev/";
+    let apiAffirmation = await fetch(URL)
+    .then((response) => response.json());
+    console.log(apiAffirmation);
+    let punctuatedAffirmation = {"affirmation": `${apiAffirmation.affirmation}.`}
+    res.send(punctuatedAffirmation);
+  } else {
+    try {
+      const affirmationQuery = 'SELECT text FROM affirmations WHERE category = $1';
+  //the categories are defined and selected in the client. See category const above.
+      const affirmationList = await db.query(affirmationQuery, [category]);
+        console.log(affirmationList);
+      let affirmationText = affirmationList.rows[Math.floor(Math.random() * affirmationList.rowCount)].text;
+      console.log(affirmationText);
+      res.send({"affirmation": affirmationText});
+    } catch (e) {
+        console.log(e);
+      return res.status(400).json({ e });
+  }
+}
+});
+
 // creates an endpoint for the route /api
 app.get('/', (req, res) => {
   //res.json({ message: 'Hello from My template ExpressJS' }); Instead of the response being a json it's a 
   res.sendFile(path.join(REACT_BUILD_DIR, 'index.html'));
 });
 
-//routes
-const random =require( "./routes/affirmationapi.js");
-app.use("/random", random)
-
-// create the get request
-app.get('/table', cors(), async (req, res) => {
-  
-  try {
-    const { rows: affirmations } = await db.query('SELECT * FROM affirmations');
-    res.send(affirmations);
-  } catch (e) {
-    console.log(e);
-    return res.status(400).json({ e });
-  }
-});
-//create route for adding favorites to affirmations table
-//query db based on string matching (===) and if it doesn't exist in the DB, add to db
-//if it exists, use that
-  //TODO: in the future remove trailing white spaces from entries before they get entered
-  //TODO: in other circumstances maybe make all lowercase to compare exact strings but this will always hit the exact same strings so its not an issue.
-
-
 app.post('/api/me', cors(), async (req, res) => {
   const newUser = {
     lastname: req.body.family_name,
     firstname: req.body.given_name,
     email: req.body.email,
-    //sub: req.body.sub
     picture: req.body.picture
 
   }
-  //console.log(newUser);
 //looks at db to see if user exists
   const queryEmail = 'SELECT * FROM users WHERE email=$1 LIMIT 1';
   const valuesEmail = [newUser.email]
@@ -77,8 +78,6 @@ app.post('/api/me', cors(), async (req, res) => {
   }
 
 });
-
-
 
 // console.log that your server is up and running
 app.listen(PORT, () => {
