@@ -33,19 +33,17 @@ Using PostgreSQL + Postico I transferred the affirmations I had previously writt
   -Custom URL (GoDaddy + render.com)- https://www.iaffirmme.app	
   -iPad Pro + Apple Pencil + Procreate
 
-### Trimmed from the MVP for presentations but in the works for the future:
+#### Version 2.0:
   - Favoriting affirmations to then serve up as an additional category 
-  - Favorites page to remove items from favorites
+  - Favorites page to manage favorites
   
-### Version 2.0 to include:
+#### Version 3.0:
   - Custom affirmations page with form to create/edit/delete user-created affirmations to then serve as an additional category
   - Category containing images of affirmation memes with alt text and image descriptions    
 
-### Version 3.0 to include:
+#### Version 4.0+:
   - Custom affirmations page with form to create/edit/delete user-created affirmations to then serve as an additional category
   - Category containing images of affirmation memes with alt text and image descriptions    
-
-### Version 4+ to include:
   - More in-depth profile + social components
   - Ability to journal in response to prompts and store in the app
   - Instagram page sharing affirmations
