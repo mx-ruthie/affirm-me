@@ -117,8 +117,8 @@ Additional note: The tests written for this app required finding the latest comp
  - Also, my cohort-mates with direct influence in the production of this app are: Alma Benitez, Diana Olivas, Kimberly Dang, Presh Worthy, and Supriya Venkatachala. Without these gentle souls I would not have finished this in time. 
  
  
-Additionally, my spouse Zach has done everything in his power to secure the time and space needed to dive fully into Techtonica, including primary responsibility for our two children, my sister Erin gifted me the iPad, and my brother Andrew gifted me my external monitor. Without these 3 people, I would not have access to this level of success. 
+Additionally, my spouse Zach has done everything in his power to secure the time and space needed to dive fully into Techtonica, including primary responsibility for our two children while teaching 10th and 11th grade English full time while I worked and co-cared for my mother across town. My sister Erin gave me an iPad and pencil for my birthday which enhanced my work and creativity beyond measure, and my brother Andrew inspired me to be a software engineer in March of this year then gifted me my external monitor for the pursuit. Without these 3 people, I would not have access to this level of success. 
 
-Special thanks to my mother, Sharon, for surviving the stroke August 19th of this year. Working on this program while helping you fight to live and thrive has been the most affirming experience of all. It helped me see how doing my very best is the best even when it's not *the* best. And thanks to my father, Charles, for reminding me to stay grateful and walk in integrity every single step of the way. 
+Special thanks to my mother, Sharon, for surviving the stroke August 19th of this year. Working on this program while helping you fight to live and thrive has been the most affirming experience of all. And thanks to my father, Charles, for reminding me to stay grateful and walk in integrity every single step of the way. 
 
 
