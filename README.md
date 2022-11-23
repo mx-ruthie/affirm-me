@@ -39,9 +39,7 @@ Using PostgreSQL + Postico I transferred the affirmations I had previously writt
   - Custom affirmations page with form to create/edit/delete user-created affirmations to then serve as an additional category
   - Category containing images of affirmation memes with alt text and image descriptions    
 
-#### Version 4.0+:
-  - Custom affirmations page with form to create/edit/delete user-created affirmations to then serve as an additional category
-  - Category containing images of affirmation memes with alt text and image descriptions    
+#### Version 4.0+:  
   - More in-depth profile + social components
   - Ability to journal in response to prompts and store in the app
   - Instagram page sharing affirmations
