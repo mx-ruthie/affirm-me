@@ -1,7 +1,7 @@
-# The MVP of iaffirmme.app
+# I Affirm Me MVP
 I Affirm Me simply returns meaningful, true affirmations to the client from an external Affirmations API with the click of a button. Upon login, users gain access to additional original affirmations by category. Ideally it's used as a tool to help people remember to be gentle with themselves.
 
-## Details for Project
+## Details for iaffirmme.app
 A final project for Techtonica 2022H2 cohort. The required template (written by Cristina from Techtonica - https://github.com/Yosolita1978) provided the foundation for an app that ran CRUD operations. You can see a copy of the starting point of my app with Auth0 integration included here: https://github.com/mx-ruthie/final-project-template. According to other requirements, I also connected my own database containing at least 2 tables, utilized an external API (https://github.com/annthurium/affirmations), and implented Auth0 for login. I used render.com to deploy the app, and a domain hosted through GoDaddy for the direct link.
 #### Stack/Technology info
   -PERN stack
@@ -18,7 +18,8 @@ A final project for Techtonica 2022H2 cohort. The required template (written by 
   -Git and GitHub
   -CSS
   -Custom URL (GoDaddy + render.com)
-    - https://www.iaffirmme.app
+    - https://www.iaffirmme.app	
+  - iPad Pro + Apple Pencil + Procreate
 
 ### Trimmed from the MVP for presentations but in the works for the future:
   - Favoriting affirmations to then serve up as an additional category 
@@ -94,4 +95,20 @@ Note:
 Server runs on http://localhost:8080 and client on http://localhost:3000. See the client package.json for the proxy.
 
 Additional note: The tests written for this app required finding the latest compatible versions of the testing library because the create-react-app version was a bit outdated.
+
+## Acknowledgements
+
+ So many incredible people deserve to be in this section of the README. Integral to material creation of this app are:
+
+ - Cristina Rodriguez, inspirational teacher and template builder.
+ - Sarah Cawley, MVP streamlining extraordinaire.
+ - Natalia Margolis, my mentor throughout Techtonica and my technical mentor.
+ - The Office Hours mentors that devoted time and patient energy helping me, especially in no particular order Julie Watzko, Scott Gilroy, Stephen Furlani, Vlad Jiminez, and Mandy Chen.
+ - Also, my cohort-mates with direct influence in the production of this app are: Alma Benitez, Diana Olivas, Kimberly Dang, Presh Worthy, and Supriya Venkatachala. Without these gentle souls I would not have finished this in time. 
+ 
+ 
+Additionally, my spouse Zach has done everything in his power to secure the time and space needed to dive fully into Techtonica, including primary responsibility for our two children, my sister Erin gifted me the iPad, and my brother Andrew gifted me my external monitor. Without these 3 people, I would not have access to this level of success. 
+
+Special thanks to my mother, Sharon, for surviving the stroke August 19th of this year. Working on this program while helping you fight to live and thrive has been the most affirming experience of all. It helped me see how doing my very best is the best even when it's not *the* best. And thanks to my father, Charles, for reminding me to stay grateful and walk in integrity every single step of the way. 
+
 
