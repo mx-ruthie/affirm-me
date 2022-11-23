@@ -28,7 +28,8 @@
   text-align: right;
 }
 .profile {
-  text-align: ce;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 .App {
   text-align: center;
