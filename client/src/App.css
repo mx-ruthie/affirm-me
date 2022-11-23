@@ -13,6 +13,7 @@
   border-style: inset;
   margin: 25px;
   padding: auto;
+  min-height: 100px;
 }
 .splash {
   text-align: center;
