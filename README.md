@@ -115,7 +115,7 @@ Additional note: The tests written for this app required finding the latest comp
  
 Additionally, my spouse Zach has done everything in his power to secure the time and space needed to dive fully into Techtonica, including assuming primary responsibility for our two children while teaching 10th and 11th grade English full time as I worked and co-cared for my mother across town. My sister Erin gave me an iPad and pencil for my birthday which enhanced my work and creativity beyond measure, and my brother Andrew inspired me to be a software engineer in March of this year then gifted me my external monitor for the pursuit. Without these 3 people, I would not have access to this level of success. 
 
-Special thanks to my mother, Sharon, for surviving the stroke August 19th of this year. Working on this program while helping you fight to live and thrive has been the most affirming experience of all. And thanks to my father, Charles, for reminding me to stay grateful and walk in integrity every single step of the way. 
+Special thanks to my mother, Sharon, for surviving the stroke August 19th of this year. Working on this program while helping you fight to live and thrive has been the most affirming experience of all. Thanks also to my mother-in-law Penne for the childcare assistance so that I could. Last but not least, thanks to my father, Charles, for reminding me to stay grateful and walk in integrity every single step of the way. 
 
 https://user-images.githubusercontent.com/102179075/203637350-7f93ac08-7a84-4add-9d17-ab19e0435d27.mp4
 
