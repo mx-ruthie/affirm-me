@@ -4,14 +4,8 @@ const AffirmMe = (props) => {
   let user = props.user;
   const [affirmation, setAffirmation] = useState("Even on your worst day, you are still a whole human being worthy of love.")
   const [category, setCategory] = useState("Random");
+  
   const fetchAffirmation = () => {
-    
-    //TODO: Ask Cristina how to change the fetch below to hit the correct render
-    //database instead of my local server through local host 8080
-
-    // fetch("/random") this almost works, but the proxy isn't working (calling localhost:3000 instead of 8080)
-    //fetch(`http://localhost:8080/${category}`)
-
     fetch(`/${category}`)
       .then(response => {
         return response.json()
@@ -24,12 +18,7 @@ const AffirmMe = (props) => {
     setCategory(event.target.value);
     console.log(event.target.value);
   }
-//Commented out this useEffect so that it would stop running the 
-//fetchAffirmation every time the page loaded
-  // useEffect(() => {
-  //   fetchAffirmation()
-  // }, [])
- //I need to add what makes the div return to the very inital state 
+
   return (
     <div className="entire-affirmation-div">
       
